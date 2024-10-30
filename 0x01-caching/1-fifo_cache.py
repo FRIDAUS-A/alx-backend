@@ -8,6 +8,9 @@ from typing import Any
 
 
 class FIFOCache(BaseCaching):
+    """
+        FIFOCache class
+    """
     def __init__(self) -> None:
         """
             Initialiaze the class
