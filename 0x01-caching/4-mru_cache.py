@@ -10,14 +10,14 @@ class MRUCache(BaseCaching):
     """
         Most Recently Used Caching Implementation
     """
-    def __init__(self):
+    def __init__(self) -> None:
         """
             Initialize class
         """
         super().__init__()
         self.__mru = []
 
-    def put(self, key, item):
+    def put(self, key, item) -> None:
         """
             Must assign to the dictionary self.cache_data
             the item value for the key key
