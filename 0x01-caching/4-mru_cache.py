@@ -34,6 +34,10 @@ class MRUCache(BaseCaching):
             self.__mru.append(key)
 
     def get(self, key) -> Any:
+        """
+            a class LFUCache that inherits from
+            BaseCaching and is a caching system
+        """
         if key:
             try:
                 self.__mru.remove(key)
