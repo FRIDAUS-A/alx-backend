@@ -21,7 +21,7 @@ class BasicCache(BaseCaching):
             Must assign to the dictionary self.cache_data
             the item value for the key key.
         """
-        if key or item:
+        if key and item:
             self.cache_data.__setitem__(key, item)
 
     def get(self, key) -> Any:
