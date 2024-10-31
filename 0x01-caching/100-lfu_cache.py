@@ -11,7 +11,7 @@ class LFUCache(BaseCaching):
     """
         Least Frequently used class
     """
-    def __init__(self):
+    def __init__(self) -> None:
         """
             Initialize class
         """
@@ -19,7 +19,7 @@ class LFUCache(BaseCaching):
         self.__lfu = {}
         self.__lru = deque()
 
-    def put(self, key, item):
+    def put(self, key, item) -> Any:
         """
             Must assign to the dictionary self.cache_data
             the item value for the key key
@@ -54,7 +54,7 @@ class LFUCache(BaseCaching):
             self.cache_data.__setitem__(key, item)
             self.__lfu[key] = 1 + self.__lfu.get(key, 0)
 
-    def get(self, key):
+    def get(self, key) -> None:
         """
             Must return the value in self.cache_data linked to key
         """
