@@ -19,6 +19,7 @@ app.config.from_object(Config)
 app.url_map.strict_slashes = False
 babel = Babel(app)
 
+
 @app.route('/')
 def get_index() -> str:
     """The home/index page.
